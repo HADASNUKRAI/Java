@@ -1,0 +1,30 @@
+hadasnuk2_
+207310855
+
+The strategy I used for the clever player is the player will
+move on the board col by col from the coordinate (0,0) and put mark in the empty cell
+so he will fill cols and will make the other player a difficulty to win.
+
+The strategy I chose for the genius player is to roll on the board from coordinate
+(1,0) and put mark in the empty cell each turn so the genius player will be blocking the
+other player (the streak of the other player in the col will be destroyed) and fill a row faster
+than the clever player and cause him much difficulty to win.
+
+The strategy i chose for the whatever player is choosing a random coordinate
+and mark the cell, without any smart thinking
+
+The advantage for using an interface Player for the players is that all of the players
+sharing the same function; playTurn, all of them have their turn in the game
+but different strategy. Instead implement the same method with different strategy
+for each player, I implement an interface and each player is implements by his strategy
+I based.
+
+
+Abstraction:
+Designing the system so that you can easily add new players without messing up the existing code.
+Information Hiding:
+Keeping the details of how each player works a secret, so you can change how they work without
+breaking everything else.
+Polymorphism:
+Using different players with their unique strategies in the same game without causing chaos.
+It makes the code flexible and easy to take care of.
